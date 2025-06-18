@@ -10,9 +10,6 @@
 <p align="justify">
 Credit score is crucial for companies as it helps them assess the creditworthiness of potential customers and partners. It enables informed decisions regarding loans, partnerships, and credit terms, ultimately minimizing financial risks and promoting responsible financial management.
 
-<p align="justify">
-This work was done based on the Kaggle competition that requires participants to improve on the state of the art in credit scoring, by predicting the probability that somebody will experience financial distress in the next two years.
-
 ### Objectives
 <p align="justify">
 Build a model that borrowers can use to help make the best financial decisions. <b>Evaluation:</b> AUC
