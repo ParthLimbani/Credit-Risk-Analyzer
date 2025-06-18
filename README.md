@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Financial Distress Prediction</h1>
+  <h1>Credit Risk Analyzer</h1>
 </div>
 
 <p align="center">
@@ -58,9 +58,6 @@ Exploring the dataset, we found that attributes <code>MonthlyIncome</code> and <
 <p align="justify">
 After that, using stratified k-fold cross-validation technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance (N=93% and Y=7%), we trained applying two methodologies, firstly with oversampling and secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we used SHAP to verify which attributes were most important to the model.
 
-<p align="justify">
-The complete study can be replicated in the notebook <code>Financial_distress_prediction.ipynb</code>, available <a href="https://github.com/rdemarqui/financial_distress_prediction/blob/main/Financial_distress_prediction.ipynb">here</a>.
-
 ### Results and Conclusions
 <p align="justify">
 As can be seen below, oversampling (mean_over) did more harm than good to the performance of most algorithms. Therefore, we chose not to use balanced data to train.
@@ -81,4 +78,5 @@ Analyzing chart below, we can see that the model considered <code>RevolvingUtili
 **Future improvements proposal:** <p align="justify"> We filled null values with the median of their respective attributes, but <code>MonthlyIncome</code> and <code>NumberOfDependents</code> might still be related to the customer's life stage, for example, younger customers might have salaries below the median and no dependents. An improvement that could be made is using a median by age instead of a median of the full column. We tried oversampling method, but undersampling could be tried too. Another thing that could be done it's, instead use only one model, make a stacking with top-ranked models or the best one with different seeds. We let that for future studies.
 
 ### References
-* https://www.kaggle.com/competitions/GiveMeSomeCredit
+* Dataset and problem inspiration sourced from the [Give Me Some Credit](https://www.kaggle.com/competitions/GiveMeSomeCredit) Kaggle competition.
+
